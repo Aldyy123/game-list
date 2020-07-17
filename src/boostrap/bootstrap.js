@@ -1,0 +1,5 @@
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import 'bootstrap/scss/bootstrap.scss'
+import 'popper.js'
+import '../assets/styles/style.scss'

@@ -1,0 +1,187 @@
+@import "./comp";
+@import "./mobile";
+
+#games {
+  position: absolute;
+  z-index: 1;
+  left: 31rem;
+  top: 15rem;
+
+  h1 {
+    font-family: $landing;
+    text-transform: uppercase;
+    color: $link;
+  }
+}
+
+nav#nav {
+  a {
+    color: $link;
+    font-family: $font;
+    text-transform: uppercase;
+  }
+  a:hover {
+    color: rgb(92, 218, 54);
+  }
+  .active {
+    color: $active;
+  }
+}
+
+// Glide
+.glide {
+  background-color: black;
+  img {
+    opacity: 0.8;
+    height: 34rem;
+  }
+}
+
+.games-content {
+  .list-games {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    a {
+      margin-top: 20px;
+      height: 90%;
+      width: 40%;
+      cursor: pointer;
+
+      .card {
+        padding: 10px;
+
+        div.ket {
+          display: flex;
+          justify-content: space-between;
+
+          
+        }
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+
+    .page-item {
+      margin-left: 8px;
+    }
+  }
+}
+
+main.details {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  padding: 25px;
+  justify-content: space-between;
+
+  .coloumn-1, .coloumn-2{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .coloumn-1{
+    background-color: rgb(42, 42, 119);
+    width: 70%;
+
+    .title{
+      h2{
+        font-size: 40px;
+      }
+      h5{
+        color: #8a8a8a;
+        font-size: 20px;
+
+        span:nth-child(2):after{
+         content: '';
+        }
+        span:after{
+          content: '|';
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .description p{
+      font-size: 20px;
+      line-break: 10px;
+    }
+  }
+  .coloumn-2{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .card:nth-child(1){
+      align-self: center;
+      background-color: rgb(64, 146, 77);
+      
+      padding: 10px;
+
+      .list{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        a{
+          font-size: 13px;
+          padding: 5px!important;
+        }
+
+      }
+    }
+
+    .card:nth-child(2){
+      display: flex;
+      padding: 15px;
+      margin-top: 10px;
+
+      .navbar-nav{
+        color: #888;
+      }
+    }
+
+  }
+
+
+}
+
+// Star
+.stars-outer {
+  display: inline-block;
+  position: relative;
+
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #c7712a;
+  }
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+}
+
+div.blog{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}

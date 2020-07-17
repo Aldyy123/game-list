@@ -1,0 +1,66 @@
+@media screen and (max-width : 850px){
+    #games{
+        position: relative;
+        left: 7rem!important;
+        z-index: 999;
+        top: 0;
+
+        h1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .games-content .list-games{
+        a{
+            width: 50%!important;
+
+            .card .ket{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    main.details{
+        display: flex;
+        flex-direction: column;
+
+        .coloumn-1, .coloumn-2{
+            width: 100%!important;
+        }
+
+        .coloumn-1{
+
+            .title{
+                h2{
+                  font-size: 25px!important;
+                }
+                h5{
+                  color: #8a8a8a;
+                  font-size: 15px!important;
+          
+                  span:nth-child(2):after{
+                   content: '';
+                  }
+                  span:after{
+                    content: '|';
+                    padding-left: 10px;
+                  }
+                }
+              }
+
+              .description p{
+                font-size: 15px!important;
+                line-break: 10px;
+              }
+        }
+
+        .coloumn-2 .card{
+            display: flex;
+            // width: 40%;
+        }
+    }
+
+}
